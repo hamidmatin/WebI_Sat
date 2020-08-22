@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        Units
+            Duration
+                s, ms
+            Rotate
+                deg, grad, rad, turn
+            Length
+                Absolute
+                    cm, mm, in, px, pc, pt
+                Relative
+                    %	Relative to the parent element
+                    em	Relative to the font-size of the element (2em means 2 times the size of the current font)
+                    rem	Relative to font-size of the root element
+
+            inherit  => inherited from parent
+            auto
+      */
+      
+      #div1 {
+        background-color: rgb(245, 151, 151);
+        width: 700px;
+        height: 500px;
+      }
+      #div2 {
+        background-color: lightgreen;
+        width: 50%;
+        height: 50%;
+
+        font-size: 2em;
+      }
+      #div3 {
+        background-color: mediumpurple;
+        font-size: 40px;
+        width: 10em;
+        height: 10rem;
+      }
+      body {
+        color: red;
+      }
+      html{
+          font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    sdsdsd
+    <div id="div1">
+      <div id="div2">
+        Div2
+      </div>
+      <div id="div3">
+        Div 3<b>Bold</b>
+      </div>
+    </div>
+  </body>
+</html>
