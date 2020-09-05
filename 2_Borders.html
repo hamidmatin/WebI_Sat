@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            p {
+                color: blue;
+            }
+            .mark {
+                color: red;
+                background-color: #f1f1f1;
+                margin-left: 3px;
+                margin-right: 3px;
+                display: block;
+            }
+            #div1 {
+                width: 400px;
+                height: 250px;
+                /* background-color: rgb(243, 209, 209); */
+                margin-bottom: 20px;
+
+                /* color:  green; */
+                border-top-style: solid;
+                border-top-color: green;
+                border-top-width: 3px;
+                border-top-width: 1px;
+                border-top-width: 10px;
+
+                border-right-style: dotted;
+                border-right-color: red;
+                border-right-width: 5px;
+            }
+
+            #div2 {
+                width: 400px;
+                height: 250px;
+                background-color: rgb(243, 209, 209);
+                margin-bottom: 20px;
+
+                /* shorthand */
+                border-top: solid 2px red;
+                border-right: 4px dashed green;
+                border-bottom: yellow 6px dotted;
+                border-left: blue 6px double;
+            }
+            #div3 {
+                width: 400px;
+                height: 250px;
+                background-color: rgb(243, 209, 209);
+                margin-bottom: 20px;
+
+                /* shorthand 2 */
+                border: ridge 3px green;
+                /* border-bottom: none; */
+            }
+            #div4 {
+                width: 400px;
+                height: 250px;
+                background-color: rgb(243, 209, 209);
+                margin-bottom: 20px;
+
+                /* shorthand 3 */
+                border-style: double dashed dotted solid;
+                border-color: red rgb(88, 138, 13) blue;
+                border-width: 10px;
+            }
+
+            #div5 {
+                width: 400px;
+                height: 400px;
+                background-color: rgb(243, 209, 209);
+                margin-bottom: 20px;
+
+                border: 4px solid red;
+
+                border-top-left-radius: 40px;
+                border-top-left-radius: 60px;
+                border-top-left-radius: 20%;
+                border-top-left-radius: 50%;
+                border-top-left-radius: 100%;
+
+                border-bottom-right-radius: 100%;
+            }
+
+            #div6 {
+                width: 400px;
+                height: 400px;
+                background-color: rgb(243, 209, 209);
+                margin-bottom: 20px;
+
+                border: 4px ridge  green;
+
+                border-top-left-radius: 100%;
+
+                border-top-right-radius: 50px;
+                border-top-right-radius: 100px;
+                border-top-right-radius: 100%;
+            }
+
+            #div7 {
+                width: 400px;
+                height: 200px;
+                background-color: rgb(243, 209, 209);
+                margin-bottom: 20px;
+
+                border: 4px ridge  green;
+
+                border-radius: 20px 40px 60px 80px;
+                border-radius: 20px 40px 60px ;
+                border-radius: 20px 40px;
+                border-radius: 20px ;
+                border-radius: 100%;
+                border-radius: 50%;
+            } 
+            #div8 {
+                width: 400px;
+                height: 200px;
+                background-color: rgb(243, 209, 209);
+                margin-bottom: 20px;
+
+                border: 10px solid green;
+                outline: 10px dashed red;
+
+                outline-offset: 0;
+                outline-offset: -10px;
+                outline-offset: -20px;
+                outline-offset: -50px;
+                outline-offset: 50px;
+                outline-offset: 0;
+
+                border-radius: 20px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <p>
+                The CSS <span class="mark">border</span> properties allow you to specify the style,
+                width, and color of an element's border.
+            </p>
+        </div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+        <div id="div6"></div>
+        <div id="div7"></div>
+        <div id="div8"></div>
+        
+    </body>
+</html>

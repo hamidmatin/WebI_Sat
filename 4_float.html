@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            p{
+                border: 2px solid #cccccc;
+                padding: 15px;
+                line-height: 1.8;
+                font-size: 18px;
+                
+                /* راه اول */
+                /* height: 150px; */
+
+                /* راه دوم */
+                /* min-height: 150px; */
+
+                /* راه سوم */
+                overflow: auto;
+            }
+            img{
+                /* vertical-align: middle;
+                vertical-align: super;
+                vertical-align: sub;
+                vertical-align: text-bottom;
+                vertical-align: text-top; */
+
+                height: 150px;
+
+                float: left;
+                /* float: right; */
+                margin-right: 15px;
+            }
+            .test{
+                display: block;
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                float: right;
+            }
+            #div1{
+                width: 250px;
+                height: 350px;
+                background-color: red;
+                float: left;
+            }
+            #div2{
+                width: 300px;
+                height: 300px;
+                background-color: green;
+                float: left;
+            }
+            #div3{
+                width: 500px;
+                height: 320px;
+                background-color: blue;
+                float: right;
+            }
+            #div4{
+                width: 300px;
+                height: 300px;
+                background-color: rgb(64, 235, 226);
+                float: right;
+            }
+            #div5{
+                width: 100%;
+                height: 300px;
+                background-color: rgb(235, 64, 212);
+               
+               clear: left;
+               clear: right;
+               clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <img src="images/pineapple.jpg" alt="sd" />
+            <span class="test"></span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+            dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+            Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum
+            augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+            Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+            nisi, sed ullamcorper ipsum dignissim ac...
+        </p>
+
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+    </body>
+</html>
