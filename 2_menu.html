@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;       
+      }
+
+      .navbar {
+        background-color: #555555;
+        height: 40px;
+      }
+      .nav{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .nav-item{
+        float: left;
+      }
+      .nav-link{
+        color: white;
+        text-decoration: none;
+        /* background-color: rgb(243, 149, 149); */
+        padding:0 20px;
+        line-height: 40px;
+        display: block;
+        text-transform: uppercase;
+      }
+      .nav-link:hover{
+        background-color: #000000;
+      }
+
+      .aside{
+        background-color: #f1f1f1;
+        width: 15%;
+        padding: 15px 0;        
+      }
+      .aside-title{
+        padding: 0 16px;
+        margin: 10px 0 5px;
+      }
+      .aside-nav-link{
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 4px 16px;
+      }
+      .aside-nav-link:hover{
+        background-color: #cccccc;
+      }
+      .active{
+        background-color: #4CAF50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="nav-link">html</a></li>
+        <li class="nav-item"><a href="#" class="nav-link active">css</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">javascript</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">sql</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">python</a></li>
+      </ul>
+    </div>
+    <div class="aside">
+      <h3 class="aside-title">PHP Tutorial</h3>
+      <ul class="nav">
+        <li>
+          <a href="#" class="aside-nav-link active">Home</a>
+        </li>
+        <li>
+          <a href="#" class="aside-nav-link">Introduction</a>
+        </li>
+        <li>
+          <a href="#" class="aside-nav-link">Editors</a>
+        </li>
+        <li>
+          <a href="#" class="aside-nav-link">Basic</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
