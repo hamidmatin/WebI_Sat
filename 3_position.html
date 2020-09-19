@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url('images/bgdesert.jpg');
+            height: 1000px;
+        }
+        #fixed{
+            background-color: lightgreen;
+            padding: 10px;
+
+            position: static;
+            position: fixed;
+            /* width: 200px; */
+             /* top: 0; */
+            /* top: 200px;  */
+
+            bottom: 0;
+            height: 100px;
+
+            /* left: 0; */
+            right: 0;
+            width: 200px;
+
+        }
+        #div1, #div2{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            
+            float: left;
+        }
+        #relative{
+            float: left;
+            width: 800px;
+            height: 500px;
+            background-color: lightgrey;
+            margin-top: 50px;
+
+            /* position: relative; */
+            top: 0;
+            top: 50px;
+            top: -50px;
+            /* left: 0;
+            left: 100px;
+            left: -100px; */
+            right: 100px;
+        }
+        #child{
+            width: 35%;
+            height: 35%;
+            background-color: crimson;
+            
+            /* position: absolute; */
+            right: 100px;
+            bottom: 0;
+        }
+        #absolute{
+            width: 70%;
+            height: 70%;
+            background-color: rgb(223, 178, 67);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* left: 100%; */
+        }
+    </style>
+</head>
+<body>
+    <div id="fixed">
+        Fixed Position
+    </div>
+    <div id="div1">sddfdsafsdaf</div>
+    <div id="relative">
+        <div id="child">
+            <div id="absolute"></div>
+        </div>
+    </div>
+    <div id="div2"></div>
+</body>
+</html>
