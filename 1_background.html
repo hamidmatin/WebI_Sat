@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        width: 900px;
+        height: 600px;
+        margin-bottom: 20px;
+        background-color: rgb(233, 160, 160);
+
+        background-image: url("images/paper.gif");
+        background-image: url("images/images.jpg");
+        background-image: url("images/bgdesert.jpg");
+      }
+      #div2 {
+        width: 900px;
+        height: 550px;
+        margin-bottom: 20px;
+        background-color: rgb(233, 160, 160);
+        background-image: url("images/pineapple.jpg");
+
+        background-repeat: repeat;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: space;
+        background-repeat: round;
+        background-repeat: no-repeat;
+      }
+      #div3 {
+        width: 900px;
+        height: 550px;
+        margin-bottom: 20px;
+        background-color: rgb(233, 160, 160);
+        background-image: url("images/pineapple.jpg");
+        background-repeat: no-repeat;
+
+        background-position-x: 150px;
+        background-position-y: 100px;
+        background-position: 150px 100px;
+        background-position: 90% 100%;
+        background-position: 200px;
+        background-position: left;
+        background-position: right;
+        background-position: bottom;
+        background-position: bottom right;
+        background-position: right bottom;
+        background-position: center;
+      }
+      #div4{
+        width: 900px;
+        height: 550px;
+        margin-bottom: 20px;
+        background-color: rgb(160, 233, 223);
+        background-image: url("images/pineapple.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        background-attachment: scroll;
+        overflow: auto;
+        background-attachment: local;
+        background-attachment: fixed;
+
+        /* Shorthand */
+        /* background: color image position repeat attachment; */
+        /* background: url('images/pineapple.jpg') no-repeat red 50px 100px fixed; */
+        background: url('images/pineapple.jpg') no-repeat rgb(160, 233, 223) center fixed;
+        
+        
+        /* background-size: 100% 100%; */
+      }
+
+      #div5{
+        width: 900px;
+        height: 350px;
+        margin-bottom: 20px;
+        background: rgb(212, 160, 233) url('images/01.jpg') no-repeat ;
+
+        /* background-size: width height; */
+        background-size: 300px;
+        background-size: 900px;
+        background-size: 900px 550px;
+        background-size: 100%;
+        background-size: 100% 100%;
+        background-size: contain;
+        background-size: cover;
+      }
+
+      #div6{
+        width: 900px;
+        height: 450px;
+        margin-bottom: 20px;
+        background: rgb(212, 160, 233) url('images/01.jpg') no-repeat ;
+        background-size: 100% 100%;
+
+        padding: 50px;
+        border: 20px dashed red;
+
+        /* related to image*/
+        background-origin: padding-box;
+        background-origin: content-box;
+        background-origin: border-box;
+
+        /* related to background */
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+
+        font-family: 'Franklin Gothic black';
+        font-size: 100px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.8;
+        color: red;
+
+        
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+      }
+      #div6:hover{
+        color: transparent;
+      }
+
+      #div7{
+        width: 900px;
+        height: 450px;
+        margin-bottom: 20px;
+        /* background-color: rgb(196, 147, 241);
+        background-image: url('images/pineapple.jpg'), url('images/paper.gif');
+        background-repeat: no-repeat, repeat;
+        background-position: right bottom, 0 0; */
+
+        background: url('images/pineapple.jpg') no-repeat right bottom,
+                    url('images/woman-1477091_1920-255x320.jpg') no-repeat bottom left,
+                    url('images/paper.gif') repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi debitis tempore velit eaque, deleniti alias perspiciatis eveniet eligendi quam explicabo iusto, ipsam adipisci eum amet esse earum odit assumenda.</p>
+    </div>
+    <div id="div5"></div>
+    <div id="div6">Background Image</div>
+    <h3>Multipe background Image</h3>
+    <div id="div7"></div>
+    
+  </body>
+</html>
