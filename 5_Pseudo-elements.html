@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 60%;
+        border: 2px solid #eeeeee;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /*
+        selector::pseudo-element {
+            property: value;
+        }
+      */
+
+      /*
+        elector::first-line {
+            property: value;
+        }
+
+        font properties
+        color properties
+        background properties
+        word-spacing
+        letter-spacing
+        text-decoration
+        vertical-align
+        text-transform
+        line-height
+        clear
+      */
+      p::first-line {
+        color: red;
+        font-size: 2em;
+        font-variant: small-caps;
+      }
+      /*
+        elector::first-letter {
+            property: value;
+        }
+
+        font properties
+        color properties 
+        background properties
+        margin properties
+        padding properties
+        border properties
+        text-decoration
+        vertical-align (only if "float" is "none")
+        text-transform
+        line-height
+        float
+        clear
+
+      */
+      p::first-letter {
+        color: blue;
+        font-size: 60px;
+        font-family: "Times New Roman", Times, serif;
+        float: left;
+        margin-right: 10px;
+        line-height: 0.8;
+      }
+
+      /*
+        elector::selection {
+            property: value;
+        }
+
+        color
+        background-color
+      */
+
+      ::selection {
+        background-color: yellow;
+        color: green;
+      }
+
+      .coin{
+          background: url('/images/coin.png') no-repeat center;
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          vertical-align: middle;
+      }
+      li::before{
+          content: url('/images/coin.png');
+          vertical-align: middle;
+      }
+      li::after{
+          content: "ریال";
+          color: red;
+          margin-left: 20px;
+      }
+      h4::before{
+          content: url('/images/quote_start.png');
+      }
+      h4::after{
+          content: url('/images/quote_end.png');
+      }
+
+      a::after{
+          content: "( " attr(href) " )";
+          margin-right: 20px;
+          color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>alkjdas daskjgd</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum non ea
+      ipsam? Voluptatibus veniam dolore atque fugiat magni modi aperiam eaque
+      officia, delectus quam reiciendis molestiae dolorem doloremque
+      repudiandae?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum non ea
+      ipsam? Voluptatibus veniam dolore atque fugiat magni modi aperiam eaque
+      officia, delectus quam reiciendis molestiae dolorem doloremque
+      repudiandae?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum non ea
+      ipsam? Voluptatibus veniam dolore atque fugiat magni modi aperiam eaque
+      officia, delectus quam reiciendis molestiae dolorem doloremque
+      repudiandae?
+    </p>
+    <h2>dsjklfdsjfgsdkj</h2>
+    <ul>
+        <li>456545</li>
+        <li>415454</li>
+        <li>45664</li>
+        <li>45654</li>
+        <li>4545</li>
+        <li>454</li>
+    </ul>
+    <h4>sdlkhsd lfkdshf dsgf </h4>
+    <h4>slhs fgsldfg sdgjf k</h4>
+
+    <a href="http://mft.info" title="http://mft.info">Mojtame Fanni Tehtran</a> <br>
+    <a href="http://www.sematec-co.com" data-myattr="">Sematec</a> <br>
+  </body>
+</html>
