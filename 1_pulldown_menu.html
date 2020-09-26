@@ -42,6 +42,8 @@
             visibility: hidden;
             position: absolute;
             /* display: none; */
+            left: 0;
+            top: 100%;
         }
         .nav ul li:hover > ul{
             visibility: visible;
@@ -51,6 +53,10 @@
             min-width: 200px;
             background-color: rgb(14, 117, 117);
             white-space: nowrap;
+        }
+        .nav ul ul ul{
+            left: 100%;
+            top: 0;
         }
     </style>
 </head>
@@ -75,7 +81,16 @@
                     <li><a href="#">Item 3 - 1 sdsds</a></li>
                     <li><a href="#">Item 3 - 2 sdsdsadsd</a></li>
                     <li><a href="#">Item 3 - 3</a></li>
-                    <li><a href="#">Item 3 - 4 k j hg hg hdhd h kdsahf daskfg</a></li>
+                    <li>
+                        <a href="#">Item 3 - 4 k j hg hg hdhd h kdsahf daskfg</a>
+                        <ul>
+                            <li><a href="#">Item 3 - 4 -1</a></li>
+                            <li><a href="#">Item 3 - 4 -2</a></li>
+                            <li><a href="#">Item 3 - 4 -3</a></li>
+                            <li><a href="#">Item 3 - 4 -4</a></li>
+                            <li><a href="#">Item 3 - 4 -5</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Item 3 - 5</a></li>
                     <li><a href="#">Item 3 - 6</a></li>
                     <li><a href="#">Item 3 - 7</a></li>
