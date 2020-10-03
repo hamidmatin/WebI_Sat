@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sansita+Swashed:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            margin: 0;
+        }
+        .row::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .container{
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        #about{
+            padding: 100px 0;            
+        }
+        #about h2{
+            text-align: center;
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 600;
+            color: #555555;
+        }
+        #about p{
+            color: #555555;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 70%;
+            margin: 70px auto;
+            text-align: center;
+            /* background-color: bisque; */
+        }
+
+        .column{
+            width: 33.333333%;
+            float: left;
+            padding: 10px;            
+        }
+
+        .progress{
+            /* background-color: rgb(211, 238, 255); */
+            height: 150px;
+            position: relative;
+        }
+
+        .progress .bar{
+            height: 2px;
+            width: 100%;
+            background-color: #ccc;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .progress .bar-value{
+            height: 6px;
+            background-color: red;
+            width: 60%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .progress .bar-value::after{
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+        .progress .value{
+            background-color: red;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 4px;
+            position: absolute;
+            top: 15%;
+            left: 60%;
+            transform: translateX(-50%);
+        }
+        .progress .value::after{
+            content: '';
+            display: block;
+            color: red;
+            border-top: 6px solid ;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .progress .lable{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: red;
+        }
+        
+        /******** typography ***********/
+        .progress.typography .value,
+        .progress.typography .bar-value,
+        .progress.typography .bar-value::after        
+        {
+            background-color: #f18b6d;            
+        }
+        .progress.typography .value::after,
+        .progress.typography .lable
+        {
+            color: #f18b6d;
+        }
+        .progress.typography .value{
+            left: 60%;
+        }
+        .progress.typography .bar-value{
+            width: 60%;
+        }
+
+        /******** Design ***********/
+        .progress.design .value,
+        .progress.design .bar-value,
+        .progress.design .bar-value::after        
+        {
+            background-color: #f1d204;            
+        }
+        .progress.design .value::after,
+        .progress.design .lable
+        {
+            color: #f1d204;
+        }
+        .progress.design .value{
+            left: 82%;
+        }
+        .progress.design .bar-value{
+            width: 82%;
+        }
+
+        /******** Development ***********/
+        .progress.development .value,
+        .progress.development .bar-value,
+        .progress.development .bar-value::after        
+        {
+            background-color: #6a4d8a;            
+        }
+        .progress.development .value::after,
+        .progress.development .lable
+        {
+            color: #6a4d8a;
+        }
+        .progress.development .value{
+            left: 86%;
+        }
+        .progress.development .bar-value{
+            width: 86%;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="about">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          It is an amazng one-page theme with great features that offers an
+          incredible experience. It is easy to install, make changes, adapt for
+          your business. A modern design with clean lines and styling for a wide
+          variety of content, exactly how a business design should be. You can add
+          as many images as you want to the main header area and turn them into
+          slider.
+        </p>
+        <div class="row">
+            <div class="column">
+                <div class="progress typography">
+                    <div class="value">60%</div>
+                    <div class="bar"></div>
+                    <div class="bar-value"></div>
+                    <div class="lable">
+                        <i class="fa fa-font"></i> Typography
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="progress design">
+                    <div class="value">82%</div>
+                    <div class="bar"></div>
+                    <div class="bar-value"></div>
+                    <div class="lable">
+                        <i class="fa fa-pencil"></i> Design
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="progress development">
+                    <div class="value">86%</div>
+                    <div class="bar"></div>
+                    <div class="bar-value"></div>
+                    <div class="lable">
+                        <i class="fa fa-code"></i> Development
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
