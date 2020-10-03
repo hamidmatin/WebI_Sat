@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 250px;
+        background-color: red;
+        margin-bottom: 20px;
+      }
+
+      #div1 {
+        /* 
+            background-image: -webkit-linear-gradient(direction, color-stop1, color-stop2, ...); 
+            background-image: -moz-linear-gradient(direction, color-stop1, color-stop2, ...); 
+            background-image: -o-linear-gradient(direction, color-stop1, color-stop2, ...); 
+            background-image: linear-gradient(direction, color-stop1, color-stop2, ...); 
+        */
+        background-image: -webkit-linear-gradient(red, yellow);
+        background-image: -moz-linear-gradient(red, yellow);
+        background-image: -o-linear-gradient(red, yellow);
+        background-image: linear-gradient(red, yellow);
+      }
+
+      #div2 {
+        background-image: linear-gradient(red, yellow);
+        background-image: linear-gradient(red, yellow, green);
+        background-image: linear-gradient(red, yellow, green, lightblue);
+      }
+      #div3{
+        background-image: linear-gradient(to bottom,red, yellow);
+        background-image: linear-gradient(to left,red, yellow);
+        background-image: linear-gradient(to right,red, yellow);
+        background-image: linear-gradient(to top,red, yellow);
+      }
+      #div4{
+        background-image: linear-gradient(to bottom right,red, yellow);        
+        background-image: linear-gradient(to bottom left,red, yellow);        
+        background-image: linear-gradient(to top left,red, yellow);        
+        background-image: linear-gradient(to top right,red, yellow);        
+      }
+      #div5{
+        background-image: linear-gradient(45deg,red, yellow);        
+        background-image: linear-gradient(-45deg,red, yellow);        
+        background-image: linear-gradient(-100deg,red, yellow);        
+        background-image: linear-gradient(100deg,red, yellow);        
+      }
+      #div6{
+        background-image: linear-gradient(to left,red, yellow, green); 
+        background-image: linear-gradient(to left,red 0%, yellow 50%, green 100%); 
+        background-image: linear-gradient(to left,red 0%, yellow 30%, green 100%); 
+        background-image: linear-gradient(to left,red 0%, yellow 70%, green 100%); 
+        background-image: linear-gradient(to left,red 20%, yellow 70%, green 100%); 
+        background-image: linear-gradient(to left,red 20%, yellow 70%, green 90%); 
+      }
+      #div7{
+        background-image: linear-gradient(to left,red 0%, yellow 10%, green 20%); 
+        background-image: linear-gradient(to left,red 0%, yellow 10%, green 20%, red 30%, yellow 40%, green 50%); 
+        background-image: repeating-linear-gradient(to left,red 0%, yellow 10%, green 20%); 
+        background-image: repeating-linear-gradient(to left,red 0%, yellow 10%, green 20%, red 30%); 
+      }
+
+      #div8{
+        height: 400px;
+        /* 
+            background-image: radial-gradient(shape size at position, start-color, ..., last-color); 
+            shape:
+                ellipse (default)
+                cricle
+            
+            size:
+                w h
+                100px 200px
+                100px 100px
+
+                farthest-corner (default)
+                farthest-side 
+                closest-side
+                closest-corner
+
+            position:
+                x y
+                50px 100px
+                top left
+                top right
+                bottom right
+                ....
+                center (default)
+
+        */
+        background-image: radial-gradient(red, yellow);
+        background-image: radial-gradient(red, yellow, green);
+      }
+      #div9{
+        height: 400px;
+        background-image: radial-gradient(red, yellow 10%, green 30%);
+      }
+      #div10{
+        height: 400px;
+        background-image: radial-gradient(at 50px 30px,red, yellow, green);
+        background-image: radial-gradient(at 30% 10%,red, yellow, green);
+      }
+      #div10{
+        height: 400px;
+        background-image: radial-gradient(ellipse at center,red, yellow, green);
+        background-image: radial-gradient(circle at 30% 10%,red, yellow, green);
+        background-image: radial-gradient(circle at 30% 10%,red, yellow, green);
+        background-image: radial-gradient(circle at bottom right,red, yellow, green);
+      }
+      #div11{
+        height: 400px;
+        background-image: radial-gradient(circle at 30% 10%,red, yellow, green);
+        background-image: radial-gradient(circle 100px at 30% 30%,red, yellow, green);
+        background-image: radial-gradient(circle 100px 200px at 30% 30%,red, yellow, green);
+        background-image: radial-gradient(ellipse 100px 200px at 30% 30%,red, yellow, green);
+        background-image: radial-gradient(ellipse 200px 100px at 30% 30%,red, yellow, green);
+        background-image: radial-gradient(200px 100px at 30% 30%,red, yellow, green);
+        background-image: radial-gradient(200px at 30% 30%,red, yellow, green);
+        background-image: radial-gradient(farthest-corner at 30% 30%,red, yellow, green);
+        background-image: radial-gradient(farthest-side at 30% 30%,red, yellow, green);
+        background-image: radial-gradient(closest-corner at 30% 30%,red, yellow, green);
+        background-image: radial-gradient(closest-side at 30% 30%,red, yellow, green);
+      }
+      #div12{
+          height: 400px;
+          background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <div id="div7"></div>
+    <div id="div8"></div>
+    <div id="div9"></div>
+    <div id="div10"></div>
+    <div id="div11"></div>
+    <div id="div12"></div>
+  </body>
+</html>
