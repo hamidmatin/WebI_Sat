@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+
+        /* float: left; */
+      }
+      .flex-container {
+        background-color: DodgerBlue;
+        /* overflow: hidden; */
+
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        /* display: -ms-inline-flexbox;
+        display: -webkit-inline-flex;
+        display: inline-flex; */
+      }
+      /* .flex-container::after{
+          content: '';
+          display: block;
+          clear: both;
+      } */
+      body{
+          /* direction: rtl; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2 <br> 4546</div>
+      <div>3</div>
+    </div>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2 <br> 4546</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
